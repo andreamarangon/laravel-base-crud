@@ -5,13 +5,11 @@
   <div class="current-series">current series</div>
   <div class="container-card pt-6">
     <!-- ciclo la card con un foreach-->
-    @foreach ($comics as $index => $comic)
+    @foreach ($comics as $comic)
       <div class="card">
-        <a href="{{route('detail', ['id' => $index])}}">
-          <div class="container-img" style="background-image: url('{{ $comic['thumb'] }}')" >
+          <div class="container-img" style="background-image: url('{{ $comic->thumb }}')" >
           </div>
-          <h5 class="text-uppercase mt-2">{{ $comic['series'] }}</h5>
-        </a>
+          <h5 class="text-uppercase mt-2">{{ $comic->series }}</h5>
       </div>
     @endforeach
   </div>
