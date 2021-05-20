@@ -7,9 +7,9 @@
     <!-- ciclo la card con un foreach-->
     @foreach ($comics as $comic)
       <div class="card">
-          <div class="container-img" style="background-image: url('{{ $comic->thumb }}')" >
+          <div class="container-img" style="background-image: url('{{ $comic['thumb'] }}')" >
           </div>
-          <h5 class="text-uppercase mt-2">{{ $comic->series }}</h5>
+          <h5 class="text-uppercase mt-2">{{ $comic['series'] }}</h5>
       </div>
     @endforeach
   </div>
