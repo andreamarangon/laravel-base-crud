@@ -1,0 +1,81 @@
+/* UTILITY */
+// text color
+.text-white {
+  color: #fff;
+}
+
+.text-gray {
+  color: #A3A3A3;
+}
+
+.text-darkgray {
+  color: #333333;
+}
+
+.text-blue {
+  color: #009CFF;
+}
+
+// background-color
+.bg-purple {
+  background-color: #3C1567;
+}
+
+.bg-gray {
+  background-color: #3C3C3C;
+}
+
+.bg-blue {
+  background-color: #0072BC;
+}
+
+// margin and padding
+@for $i from 1 through 20 {
+  .mt-#{$i} {
+    margin-top: 0.5rem * $i;
+  }
+}
+
+@for $i from 1 through 20 {
+  .mb-#{$i} {
+    margin-bottom: 0.5rem * $i;
+  }
+}
+
+@for $i from 1 through 20 {
+  .pt-#{$i} {
+    padding-top: 0.5rem * $i;
+  }
+}
+
+@for $i from 1 through 20 {
+  .pb-#{$i} {
+    padding-bottom: 0.5rem * $i;
+  }
+}
+
+// font
+.font-weight-bold {
+  font-weight: bold;
+}
+
+// text
+.text-underscore {
+  text-decoration: underline;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
