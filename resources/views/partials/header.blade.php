@@ -14,7 +14,7 @@
       </div>
       <ul>
         <li class="text-uppercase"><a href="">characters</a></li>
-        <li class="text-uppercase"><a class="active" href="">comics</a></li>
+        <li class="text-uppercase"><a class="active" href="{{route('comics.index')}}">comics</a></li>
         <li class="text-uppercase"><a href="">movies</a></li>
         <li class="text-uppercase"><a href="">tv</a></li>
         <li class="text-uppercase"><a href="">games</a></li>

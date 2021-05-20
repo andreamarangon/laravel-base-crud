@@ -7,9 +7,11 @@
     <!-- ciclo la card con un foreach-->
     @foreach ($comics as $comic)
       <div class="card">
+        <a href="{{route('comics.show', ['comic' => $comic->id])}}">
           <div class="container-img" style="background-image: url('{{ $comic['thumb'] }}')" >
           </div>
           <h5 class="text-uppercase mt-2">{{ $comic['series'] }}</h5>
+        </a>
       </div>
     @endforeach
   </div>

@@ -25,31 +25,6 @@
 </section>
 <section class="detail-down">
   <div class="container-detail-down pt-2 pb-14">
-    <div class="container-detail-talent">
-      <h2>Talent</h2>
-      <div class="art-by">
-        <h5>Art by:</h5>
-        <div class="container-talent-info">
-          @foreach ($comic['artists'] as $artist)
-          <span>{{ $artist}}</span>
-          @if (!$loop->last)
-          ,
-          @endif
-          @endforeach
-        </div>
-      </div>
-      <div class="written-by">
-        <h5>Written by:</h5>
-        <div class="container-talent-info">
-          @foreach ($comic['writers'] as $writer)
-          <span>{{ $writer}}</span>
-          @if (!$loop->last)
-          ,
-          @endif
-          @endforeach
-        </div>
-      </div>
-    </div>
     <div class="container-detail-specs">
       <h2>Specs</h2>
       <div class="series">
