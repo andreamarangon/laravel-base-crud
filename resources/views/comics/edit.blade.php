@@ -3,7 +3,7 @@
 <section>
     <form action="{{route('comics.update', ['comic'=> $comic->id])}}" method="post">
         @csrf
-        @method('PUT')
+        @method('PATCH')
         <input type="text" name="title" placeholder="Title" value="{{$comic->title}}">
         <input type="text" name="description" placeholder="Description" value="{{$comic->description}}">
         <input type="text" name="thumb" placeholder="Thumb" value="{{$comic->thumb}}">

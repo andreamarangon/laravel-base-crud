@@ -10,10 +10,12 @@
     </div>
     <div class="nav-down">
       <div class="img-logo-dc">
-        <img src="/img/dc-logo.png" alt="">
+        <a href="{{route('home')}}">
+          <img src="/img/dc-logo.png" alt="">
+        </a>
       </div>
       <ul>
-        <li class="text-uppercase"><a href="">characters</a></li>
+        <li class="text-uppercase"><a href="{{route('home')}}">home</a></li>
         <li class="text-uppercase"><a class="active" href="{{route('comics.index')}}">comics</a></li>
         <li class="text-uppercase"><a href="">movies</a></li>
         <li class="text-uppercase"><a href="">tv</a></li>

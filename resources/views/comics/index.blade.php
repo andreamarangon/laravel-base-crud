@@ -12,11 +12,17 @@
         </div>
         <h5 class="text-uppercase mt-2">{{ $comic['series'] }}</h5>
       </a>
+      <form action="{{route('comics.destroy', ['comic' => $comic->id])}}" method="post">
+        @csrf
+        @method('DELETE')
+        <input type="submit" name="" value="Delete">
+      </form>
+      <a href="{{route('comics.edit', ['comic' => $comic->id])}}">edit</a>
     </div>
     @endforeach
   </div>
   <div class="my-btn-main">
-    <a href="{{route('comics.create')}}">create comics</a> 
+    <a href="{{route('comics.create')}}">create comics</a>
   </div>
 </section>
 <section class="shop">
