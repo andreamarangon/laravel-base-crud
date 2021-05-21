@@ -47,6 +47,11 @@ header {
               border-bottom: 6px solid $secondary;
               padding-bottom: 36px;
             }
+            &:hover {
+              color: #0282F9;
+              border-bottom: 6px solid $secondary;
+              padding-bottom: 36px;
+            }
           }
           i {
             color: #0282F9;

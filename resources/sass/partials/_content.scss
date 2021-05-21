@@ -49,6 +49,10 @@ main {
       margin: 0 auto;
       color: #fff;
       font-size: 14px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
 
   }
@@ -70,6 +74,31 @@ main {
           margin-right: 15px;
         }
       }
+    }
+  }
+  .container-flex-vertical {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    input {
+      background-color: transparent;
+      text-transform: uppercase;
+      border-radius: 0;
+      border: 2px solid #fff;
+      color: #fff;
+      height: 45px;
+      width: 300px;
+      &:last-child {
+      background-color: $secondary;
+      cursor: pointer;
+      }
+    }
+    ::-webkit-input-placeholder {
+      color: #fff;
+      padding-left: 20px;
     }
   }
 }
