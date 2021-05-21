@@ -6,16 +6,18 @@
   <div class="container-card pt-6">
     <!-- ciclo la card con un foreach-->
     @foreach ($comics as $comic)
-      <div class="card">
-        <a href="{{route('comics.show', ['comic' => $comic->id])}}">
-          <div class="container-img" style="background-image: url('{{ $comic['thumb'] }}')" >
-          </div>
-          <h5 class="text-uppercase mt-2">{{ $comic['series'] }}</h5>
-        </a>
-      </div>
+    <div class="card">
+      <a href="{{route('comics.show', ['comic' => $comic->id])}}">
+        <div class="container-img" style="background-image: url('{{ $comic['thumb'] }}')">
+        </div>
+        <h5 class="text-uppercase mt-2">{{ $comic['series'] }}</h5>
+      </a>
+    </div>
     @endforeach
   </div>
-  <div class="my-btn-main">load more</div>
+  <div class="my-btn-main">
+    <a href="{{route('comics.create')}}">create comics</a> 
+  </div>
 </section>
 <section class="shop">
   <div class="container-shop">
