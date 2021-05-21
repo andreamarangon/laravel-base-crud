@@ -15,8 +15,8 @@
         </a>
       </div>
       <ul>
-        <li class="text-uppercase"><a href="{{route('home')}}">home</a></li>
-        <li class="text-uppercase"><a class="active" href="{{route('comics.index')}}">comics</a></li>
+        <li class="text-uppercase"><a class="{{Route::currentRouteName() == 'home' ? 'active': '' }}" href="{{route('home')}}">home</a></li>
+        <li class="text-uppercase"><a class="{{Route::currentRouteName() == 'comics.index' ? 'active': '' }}" href="{{route('comics.index')}}">comics</a></li>
         <li class="text-uppercase"><a href="">movies</a></li>
         <li class="text-uppercase"><a href="">tv</a></li>
         <li class="text-uppercase"><a href="">games</a></li>
