@@ -29,6 +29,7 @@
       <span class="search">Search <i class="fas fa-search"></i></span>
     </div>
   </nav>
-  <div class="jumbo">
+  <div class={{Route::currentRouteName() != 'home' ? 'jumbo': '' }}>
+
   </div>
 </header>

@@ -15,9 +15,11 @@
       <form action="{{route('comics.destroy', ['comic' => $comic->id])}}" method="post">
         @csrf
         @method('DELETE')
-        <input type="submit" name="" value="Delete">
+        <input class="delete" type="submit" name="" value="Delete">
       </form>
-      <a href="{{route('comics.edit', ['comic' => $comic->id])}}">edit</a>
+      <div class="edit">
+        <a href="{{route('comics.edit', ['comic' => $comic->id])}}">Edit</a>
+      </div>
     </div>
     @endforeach
   </div>
