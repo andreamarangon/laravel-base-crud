@@ -50,11 +50,13 @@ main {
           padding: 2px;
           float: right;
           width: 50%;
+          cursor: pointer;
         }
         .edit {
           background-color: $secondary;
           color: #fff;
           width: 50%;
+          cursor: pointer;
           a {
             padding-left: 30px;
             font-family: inherit;
@@ -105,6 +107,12 @@ main {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    .alert-danger{
+      color: #f00;
+      ul {
+        list-style: none;
+      }
+    }
     input {
       background-color: transparent;
       text-transform: uppercase;

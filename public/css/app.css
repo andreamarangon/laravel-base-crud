@@ -508,11 +508,13 @@ main .comics-section .container-card .card .delete {
   padding: 2px;
   float: right;
   width: 50%;
+  cursor: pointer;
 }
 main .comics-section .container-card .card .edit {
   background-color: #0282F9;
   color: #fff;
   width: 50%;
+  cursor: pointer;
 }
 main .comics-section .container-card .card .edit a {
   padding-left: 30px;
@@ -562,6 +564,12 @@ main .container-flex-vertical {
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+main .container-flex-vertical .alert-danger {
+  color: #f00;
+}
+main .container-flex-vertical .alert-danger ul {
+  list-style: none;
 }
 main .container-flex-vertical input {
   background-color: transparent;
